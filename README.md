@@ -66,18 +66,7 @@ meeting-minutes-summarizer/
 
 ---
 
-## 📌 Example Input
-
-```
-Today we discussed the upcoming product launch timeline. The design team has completed the final mockups. QA will start testing on Monday. Marketing will prepare social media content by Friday. We aim to launch by the 15th of next month.
-```
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
+👩‍💻 Made by Prerna Pramod 
 ---
 
 ## 👩‍💻 Made by Prerna Pramod G H
