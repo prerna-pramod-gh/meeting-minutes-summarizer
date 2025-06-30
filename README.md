@@ -1,6 +1,4 @@
-Got it! Here’s the **exact README.md content tailored just for GitHub** — focused on project description, usage, and license, without extra publication or platform mentions:
 
-````markdown
 # 📝 Meeting Minutes Summarizer (AI-Powered)
 
 This is a simple AI-powered web app that takes raw meeting transcripts and summarizes them into:
@@ -49,20 +47,8 @@ export OPENAI_API_KEY=your-key-here  # Windows: set OPENAI_API_KEY=your-key-here
 python app.py
 ````
 
-Open your browser at [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
-
----
-
-## 📂 Project Structure
-
-```
-meeting-minutes-summarizer/
-├── app.py           # Flask backend
-├── index.html       # Frontend UI with inline CSS/JS
-├── ai_utils.py      # AI prompt and response logic
-├── requirements.txt # Dependencies
-└── README.md        # Project documentation
-```
+## 📚 License
+MIT
 
 ---
 
