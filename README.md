@@ -46,6 +46,6 @@ export OPENAI_API_KEY=your-key-here  # Windows: set OPENAI_API_KEY=your-key-here
 # 5. Run the Flask app
 python app.py
 
-
+---
 
 👩‍💻 Made by Prerna Pramod
