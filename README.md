@@ -1,52 +1,86 @@
+Got it! Here’s the **exact README.md content tailored just for GitHub** — focused on project description, usage, and license, without extra publication or platform mentions:
+
+````markdown
 # 📝 Meeting Minutes Summarizer (AI-Powered)
 
-This project is a simple AI-powered web app that takes raw meeting transcripts and summarizes them into:
+This is a simple AI-powered web app that takes raw meeting transcripts and summarizes them into:
 - A short summary (3–5 lines)
 - A list of clear action points
 
-Built using **Flask**, **OpenAI's GPT model**, and a minimal **HTML-only frontend** (no external static folders), it's designed to be lightweight, fast, and developer-friendly.
+Built with **Flask**, **OpenAI GPT**, and a minimal **HTML frontend** (no external static folders), it is lightweight and easy to run locally.
 
 ---
 
 ## 🚀 Features
-- 🔹 Paste your meeting transcript directly in the browser  
-- 🤖 AI generates concise summaries using OpenAI GPT (e.g., `gpt-3.5-turbo`)  
-- ✅ Lists actionable bullet points from the conversation  
-- 📦 No `/static` folder – all HTML/CSS/JS is inline  
-- 🧠 Future-ready for publishing on platforms like ReadyTensor  
+
+- Paste your meeting transcript in the browser  
+- AI generates concise summaries using OpenAI GPT  
+- Lists actionable bullet points from the conversation  
+- Inline HTML/CSS/JS – no `/static` folder  
 
 ---
 
 ## 🛠 Tech Stack
+
 - Python + Flask  
 - OpenAI GPT API  
 - HTML + CSS (inline)  
-- Optional: jQuery (not required)  
-- No database, no external folders – everything is flat-structured  
 
 ---
 
-## 🧪 Run the Project Locally
+## 🧪 Running Locally
 
 ```bash
-# 1. Clone the repository
+# Clone the repo
 git clone https://github.com/your-username/meeting-minutes-summarizer.git
 cd meeting-minutes-summarizer
 
-# 2. (Optional) Create a virtual environment
+# (Optional) Create a virtual environment
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# 3. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 4. Set your OpenAI API Key
+# Set OpenAI API Key
 export OPENAI_API_KEY=your-key-here  # Windows: set OPENAI_API_KEY=your-key-here
 
-# 5. Run the Flask app
+# Run the app
 python app.py
+````
+
+Open your browser at [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 ---
-```bash
 
-👩‍💻 Made by Prerna Pramod
+## 📂 Project Structure
+
+```
+meeting-minutes-summarizer/
+├── app.py           # Flask backend
+├── index.html       # Frontend UI with inline CSS/JS
+├── ai_utils.py      # AI prompt and response logic
+├── requirements.txt # Dependencies
+└── README.md        # Project documentation
+```
+
+---
+
+## 📌 Example Input
+
+```
+Today we discussed the upcoming product launch timeline. The design team has completed the final mockups. QA will start testing on Monday. Marketing will prepare social media content by Friday. We aim to launch by the 15th of next month.
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 👩‍💻 Made by Prerna Pramod G H
+
+```
+
