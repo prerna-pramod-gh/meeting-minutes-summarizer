@@ -47,5 +47,6 @@ export OPENAI_API_KEY=your-key-here  # Windows: set OPENAI_API_KEY=your-key-here
 python app.py
 
 ---
+```bash
 
 👩‍💻 Made by Prerna Pramod
