@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meeting Minutes Summarizer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; background: #f5f5f5; }
+    textarea { width: 100%; height: 200px; padding: 10px; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 10px; }
+    #output { margin-top: 30px; background: white; padding: 20px; border-radius: 8px; }
+    h3 { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h2>AI-Powered Meeting Minutes Summarizer</h2>
+  <textarea id="transcript" placeholder="Paste your meeting transcript here..."></textarea><br>
+  <button onclick="summarize()">Summarize</button>
+
+  <div id="output" style="display:none;">
+    <h3>Summary:</h3>
+    <p id="summaryText"></p>
+    <h3>Action Points:</h3>
+    <ul id="actionList"></ul>
+  </div>
+
+  <script>
+    async function summarize() {
+      const transcript = document.getElementById("transcript").value;
+      if (!transcript.trim()) {
+        alert("Please paste a meeting transcript.");
+        return;
+      }
+
+      const res = await fetch("/summarize", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ transcript })
+      });
+
+      const data = await res.json();
+
+      if (data.error) {
+        alert(data.error);
+        return;
+      }
+
+      document.getElementById("summaryText").innerText = data.summary;
+      const ul = document.getElementById("actionList");
+      ul.innerHTML = "";
+      data.action_points.forEach(point => {
+        const li = document.createElement("li");
+        li.textContent = point;
+        ul.appendChild(li);
+      });
+
+      document.getElementById("output").style.display = "block";
+    }
+  </script>
+</body>
+</html>
