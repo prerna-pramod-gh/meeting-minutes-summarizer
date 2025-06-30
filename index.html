@@ -8,23 +8,23 @@
     body {
       font-family: Arial, sans-serif;
       margin: 30px;
-      background: #e8f0fe; /* 💡 Changed from light gray to soft blue */
+      background: #e8f0fe; /* 💡 Soft blue background */
     }
 
-    /* Center the heading */
+    /* Title styling */
     h2 {
-      text-align: center; /* 💡 Centered the title */
+      text-align: center; /* 💡 Title centered */
       color: #2c3e50;
     }
 
-    /* Textbox styling */
+    /* Textarea styling */
     textarea {
       width: 100%;
       height: 200px;
       padding: 10px;
       font-size: 16px;
       border: 1px solid #ccc;
-      border-radius: 4px; /* 💡 Slight rounding for a modern look */
+      border-radius: 4px;
       box-sizing: border-box;
     }
 
@@ -32,16 +32,15 @@
     button {
       padding: 12px 24px;
       font-size: 16px;
-      margin-top: 10px;
-      background-color: #007bff; /* 💡 Blue button */
+      background-color: #007bff; /* 💡 Blue background */
       color: white;
       border: none;
-      border-radius: 6px; /* 💡 Rounded corners */
+      border-radius: 6px;
       cursor: pointer;
     }
 
     button:hover {
-      background-color: #0056b3; /* 💡 Darker on hover */
+      background-color: #0056b3;
     }
 
     /* Output box styling */
@@ -50,7 +49,7 @@
       background: white;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05); /* 💡 Light shadow */
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
     h3 {
@@ -62,7 +61,11 @@
   <h2>AI-Powered Meeting Minutes Summarizer</h2>
 
   <textarea id="transcript" placeholder="Paste your meeting transcript here..."></textarea><br>
-  <button onclick="summarize()">Summarize</button>
+
+  <!-- 💡 Centered button -->
+  <div style="text-align: center; margin-top: 15px;">
+    <button onclick="summarize()">Summarize</button>
+  </div>
 
   <div id="output" style="display:none;">
     <h3>Summary:</h3>
