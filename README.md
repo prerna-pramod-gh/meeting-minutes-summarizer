@@ -69,7 +69,5 @@ meeting-minutes-summarizer/
 👩‍💻 Made by Prerna Pramod 
 ---
 
-## 👩‍💻 Made by Prerna Pramod G H
 
-```
 
